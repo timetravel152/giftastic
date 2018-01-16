@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giftastic!</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="GifTastic">
+	<meta name="author" content="Ali Zaidi">
+
+	<!-- add link to the jQuery Library -->
+	<script src="assets/javascript/jquery-3.1.1.min.js"></script>
+
+	<!-- reset stylesheet not needed because using bootstrap -->
+	<!-- <link rel="stylesheet" type="text/css" href="/assets/css/reset.css"> -->
+	
+	<!-- Bootstrap section -->
+	<!-- Link in locally stored min version of bootstrap.css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<!-- Link in locally stored min version of optional bootstrap theme -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.min.css">
+	<!-- Add in locally stored min version of bootstrap javascript -->
+	<script src="assets/javascript/bootstrap.min.js"></script>
+
+	<!-- Make final css adjustments with personal stylesheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+	<!-- first the navbar -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+	    	<!-- Brand and toggle get grouped for better mobile display -->
+	    	<div class="navbar-header">
+	     		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        	<span class="sr-only">Toggle navigation</span>
+		        	<span class="icon-bar"></span>
+		        	<span class="icon-bar"></span>
+		        	<span class="icon-bar"></span>
+		      	</button>
+	      		<a class="navbar-brand" href="https://github.com/realzaidiguy/week-6-giftastic">GifTastic!</a>
+	      		<img class="img-responsive" id="giphyLogo" src="assets/images/giphy-black.png" alt="giphy">
+	    	</div>
+	    	<!-- Collect the nav links, forms, and other content for toggling -->
+	    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      		<form class="navbar-form navbar-right" id="tvShowForm">
+	        		<div class="form-group">
+	          			<input type="text" class="form-control" id="tvShowInput" placeholder="Add a TV show">
+	        		</div>
+	        		<button type="submit" id="addTvShow" class="btn btn-info">Submit</button>
+	      		</form>
+	    	</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	
+	<!-- begin the bootstrap container -->
+	<div class="container">
+
+		<!-- Two columns - left one has buttons, right one has gifs -->
+		<div class="row">
+			<div class="col-md-3 btn btn-group-vertical btn btn-info" role="group" id="buttonsBar">buttonsBar</div>
+			<div class="col-md-9">
+				<div class="row" id="gifsWindow"></div>
+			</div>
+		</div>
+
+
+	<!-- end the bootstrap container -->
+	</div>
+
+	<!-- Link to the game javascript -->
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
