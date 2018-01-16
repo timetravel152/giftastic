@@ -1,0 +1,27 @@
+/*GifTastic CSS*/
+
+body {
+	background-color: black;
+}
+
+img {
+	/*margin-right: 10px;*/
+	margin-bottom: 20px
+}
+
+#giphyLogo {
+	margin-top: 4px;
+	margin-bottom: 0px
+}
+
+.show {
+	display: inline-block;
+}
+
+#gifsWindow {
+	display: inline-block;
+}
+
+p {
+	color: gray;
+}
